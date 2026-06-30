@@ -3,14 +3,17 @@
   <url><loc>https://vm-lab.us/</loc><priority>1.0</priority></url>
   <url><loc>https://vm-lab.us/apps/</loc><priority>0.9</priority></url>
   <url><loc>https://vm-lab.us/apps/seconds/</loc><priority>0.9</priority></url>
-  <url><loc>https://vm-lab.us/blog/</loc><priority>0.9</priority></url>
+  <url><loc>https://vm-lab.us/blog/</loc><priority>0.6</priority></url>
   <url><loc>https://vm-lab.us/projects/</loc><priority>0.8</priority></url>
   <url><loc>https://vm-lab.us/web-work/</loc><priority>0.8</priority></url>
   <url><loc>https://vm-lab.us/contact/</loc><priority>0.7</priority></url>
   <url><loc>https://vm-lab.us/privacy/</loc><priority>0.7</priority></url>
   <url><loc>https://vm-lab.us/support/</loc><priority>0.7</priority></url>
   <url><loc>https://vm-lab.us/privacy-policy/</loc><priority>0.3</priority></url>
-  <url><loc>https://vm-lab.us/gig-income/</loc><priority>0.8</priority></url>
+  <url><loc>https://vm-lab.us/gig-income/</loc><priority>1.0</priority></url>
+  <url><loc>https://vm-lab.us/gig-income/blog/</loc><priority>0.9</priority></url>
+  <url><loc>https://vm-lab.us/gig-income/blog/multiple-gig-apps/</loc><priority>0.9</priority></url>
+  <url><loc>https://vm-lab.us/gig-income/amazon-flex-hours/</loc><priority>0.9</priority></url>
   <url><loc>https://vm-lab.us/gig-income/privacy-policy/</loc><priority>0.3</priority></url>
   <url><loc>https://vm-lab.us/gig-income/terms/</loc><priority>0.3</priority></url>
   <url><loc>https://vm-lab.us/gig-income/support/</loc><priority>0.4</priority></url>
