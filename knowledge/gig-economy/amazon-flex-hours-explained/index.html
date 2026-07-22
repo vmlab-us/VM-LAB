@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amazon Flex Hours Explained: Rolling Limits & Blocks | VM LAB</title>
+  <meta name="description" content="Understand Amazon Flex hours, delivery blocks, rolling 7-day calculations, scheduled work, and why available hours can change day by day.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://vm-lab.us/knowledge/gig-economy/amazon-flex-hours-explained/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Amazon Flex Hours Explained: Rolling Limits and Scheduled Blocks">
+  <meta property="og:description" content="A practical guide to delivery-block hours, rolling windows, scheduled work, and hour estimates for Amazon Flex drivers.">
+  <meta property="og:url" content="https://vm-lab.us/knowledge/gig-economy/amazon-flex-hours-explained/">
+  <meta property="og:image" content="https://vm-lab.us/assets/images/gigincome/app-icon.png">
+  <meta property="og:site_name" content="VM LAB">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Amazon Flex Hours Explained">
+  <meta name="twitter:description" content="See how block hours, rolling windows, and scheduled work fit together—and why your availability estimate changes.">
+  <meta name="twitter:image" content="https://vm-lab.us/assets/images/gigincome/app-icon.png">
+  <meta name="theme-color" content="#0c2340">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <style>
+    .article-related .grid{grid-template-columns:1fr}.article-related .blog-card{min-height:auto}.article-related .card{padding:20px 22px}
+    .formula{font-size:1.08rem;font-weight:800;color:var(--navy)}.article-meta{color:var(--muted);font-size:14px;font-weight:700;margin-top:14px}
+    .table-wrap{overflow-x:auto;margin:24px 0}.article-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--border);border-radius:14px;overflow:hidden}
+    .article-table th,.article-table td{padding:13px 15px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}.article-table th{background:var(--soft);color:var(--navy)}.article-table tr:last-child td{border-bottom:0}
+    .article-toc a{color:var(--navy);font-weight:750}.article-toc a:hover{text-decoration:underline}.note{border-left:4px solid var(--navy);padding-left:18px}
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Amazon Flex Hours Explained: Rolling Limits and Scheduled Blocks","description":"Understand Amazon Flex hours, delivery blocks, rolling 7-day calculations, scheduled work, and why available hours can change day by day.","author":{"@type":"Organization","name":"VM LAB","url":"https://vm-lab.us/"},"publisher":{"@type":"Organization","name":"VM LAB","url":"https://vm-lab.us/"},"datePublished":"2026-07-22","dateModified":"2026-07-22","mainEntityOfPage":{"@type":"WebPage","@id":"https://vm-lab.us/knowledge/gig-economy/amazon-flex-hours-explained/"},"image":"https://vm-lab.us/assets/images/gigincome/app-icon.png","articleSection":"Gig Economy","keywords":["Amazon Flex hours","rolling 7-day hours","Amazon Flex blocks","Amazon Flex hour tracker"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What counts as Amazon Flex hours?","acceptedAnswer":{"@type":"Answer","text":"For personal planning, drivers commonly track the scheduled duration of accepted delivery blocks. The Amazon Flex app and current program terms remain authoritative for actual eligibility and availability."}},{"@type":"Question","name":"What does rolling 7-day hours mean?","acceptedAnswer":{"@type":"Answer","text":"A rolling 7-day total recalculates every day using the current day and the preceding six days. It is not the same as a fixed calendar week."}},{"@type":"Question","name":"Why do estimated available hours change?","acceptedAnswer":{"@type":"Answer","text":"The estimate changes when older hours leave the rolling window, completed or scheduled blocks enter it, or current Amazon rules and offer availability differ."}},{"@type":"Question","name":"Is GIG Income affiliated with Amazon?","acceptedAnswer":{"@type":"Answer","text":"No. GIG Income is an independent VM LAB app and its calculations are planning estimates, not official Amazon decisions or guarantees of block availability."}}]}</script>
+</head>
+<body>
+  <header class="site-header"><div class="container header-inner"><a class="wordmark" href="/">VM LAB</a><button class="menu-btn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button><nav class="nav"><a href="/">Home</a><a href="/apps/">Apps</a><a href="/knowledge/" aria-current="page">Knowledge</a><a href="/projects/">Projects</a><a href="/web-work/">Web Work</a><a href="/contact/">Contact</a></nav></div></header>
+  <main>
+    <article>
+      <section class="page-hero"><div class="container narrow"><div class="breadcrumbs"><a href="/">Home</a><span>›</span><a href="/knowledge/">Knowledge Center</a><span>›</span><a href="/knowledge/gig-economy/">Gig Economy</a></div><h1 class="page-title">Amazon Flex Hours Explained</h1><p class="lead">Delivery blocks look simple on a calendar. The confusing part is understanding which hours are already behind you, which are scheduled ahead, and how a rolling window changes over time.</p><p class="article-meta">Published July 22, 2026 · 15 minute read</p></div></section>
+      <section class="section"><div class="container narrow">
+        <p>Amazon Flex work is organized around delivery blocks. You reserve a block with a scheduled start time and duration, complete the route, and get paid according to the offer and applicable program terms. That part is visible inside the Amazon Flex app. Planning several days ahead becomes harder because a driver may need to think about completed blocks, future blocks, and a rolling total at the same time.</p>
+        <p>This guide explains the math behind an hour-tracking system. It does not announce a universal Amazon Flex hour cap. Limits, offer availability, eligibility, and enforcement can vary by location, account, season, and current Amazon policy. Always treat the Amazon Flex app, your current terms, and information from Amazon Support as authoritative.</p>
+        <div class="card article-toc"><div class="tag">In this guide</div><ul class="list"><li><a href="#blocks">What delivery-block hours represent</a></li><li><a href="#rolling">How a rolling 7-day calculation works</a></li><li><a href="#scheduled">Why scheduled blocks belong in a forecast</a></li><li><a href="#examples">Step-by-step hour examples</a></li><li><a href="#tracker">How GIG Income calculates an estimate</a></li><li><a href="#faq">Frequently asked questions</a></li></ul></div>
+
+        <h2 id="blocks">Start with delivery blocks, not clocked employee shifts</h2>
+        <p>Amazon describes Flex delivery partners as independent contractors who reserve delivery blocks and use their own vehicles to make deliveries. A block has a scheduled duration—such as two, three, or four hours—and a start time. For a personal schedule, that block duration is the clearest unit to record.</p>
+        <p>A three-hour block contributes three scheduled hours to your planning total even if your route experience feels shorter or longer. Actual route completion time is still worth tracking for profitability, but it answers a different question. Scheduled block hours help organize capacity; actual time helps you evaluate what the work required.</p>
+        <div class="card"><p class="formula">Recorded Flex hours = sum of the scheduled durations of the blocks you include</p></div>
+        <p>Keep these two records separate when possible:</p>
+        <ul class="list"><li><strong>Block duration:</strong> the duration shown for the reserved offer.</li><li><strong>Actual work time:</strong> the time you personally spent checking in, delivering, returning packages when required, and finishing the work.</li></ul>
+        <p>If a block is canceled, forfeited, changed, or removed, update the planning record. A tracker that still counts a block you no longer have will overstate future hours.</p>
+
+        <h2>There is no useful one-number answer for every driver</h2>
+        <p>Drivers often search for a single daily or weekly Amazon Flex limit. Even when a particular number appears to match one driver’s recent experience, it should not be presented as a permanent worldwide rule. Program settings and available offers can change. A driver’s screen is the best evidence of what that account can currently accept—not a number copied from an old forum post.</p>
+        <p>That means a good planning tool needs a configurable limit or a clearly labeled estimate. It should never claim that an arithmetic result guarantees the next offer. Amazon controls offers and eligibility. Your calculation helps you understand your own recorded schedule.</p>
+        <p class="note"><strong>Important:</strong> Amazon Flex and related marks belong to Amazon. VM LAB and GIG Income are independent and are not affiliated with or endorsed by Amazon.</p>
+
+        <h2 id="rolling">What “rolling 7-day hours” means</h2>
+        <p>A rolling 7-day window is not the same as “this week.” A calendar week resets on a chosen weekday. A rolling window moves forward one day at a time.</p>
+        <p>If today is Wednesday, a seven-day window might include the current Wednesday plus the six preceding days: Thursday through Wednesday. On Thursday, the oldest Thursday leaves the calculation and the new Thursday enters. The total can therefore fall even though no calendar week has ended.</p>
+        <div class="card"><p class="formula">Rolling 7-day total = hours recorded today + hours from the previous 6 days</p></div>
+        <p>The exact boundary used by an official system may depend on time, timezone, and Amazon’s current implementation. A personal tracker provides a planning view based on the dates and durations you enter. When the estimate and Amazon Flex app disagree, follow the Amazon Flex app.</p>
+
+        <h3>Calendar week versus rolling window</h3>
+        <div class="table-wrap"><table class="article-table"><thead><tr><th>View</th><th>How it changes</th><th>Best use</th></tr></thead><tbody><tr><td>Calendar week</td><td>Resets on a chosen weekday</td><td>Weekly income and expense reports</td></tr><tr><td>Rolling 7 days</td><td>Moves forward every day</td><td>Planning recent and upcoming block hours</td></tr><tr><td>Calendar month</td><td>Resets on the first day of the month</td><td>Budgeting and longer-term performance</td></tr></tbody></table></div>
+        <p>Suppose you worked heavily last Friday. Those Friday hours remain inside the rolling total until the window moves beyond them. When they age out, the calculated total drops. This is why a driver may expect more estimated capacity later in the week even without a traditional weekly reset.</p>
+
+        <h2 id="scheduled">Completed hours and scheduled hours answer different questions</h2>
+        <p>A total based only on completed work explains the recent past. It does not show commitments already accepted for tomorrow. If you are planning whether another block fits, future scheduled blocks matter.</p>
+        <p>Use three separate concepts:</p>
+        <ul class="list"><li><strong>Recorded hours:</strong> blocks already completed within the selected window.</li><li><strong>Scheduled hours:</strong> accepted future blocks that fall inside the forecast period.</li><li><strong>Estimated remaining hours:</strong> a planning limit minus the relevant recorded and scheduled hours.</li></ul>
+        <div class="card"><p class="formula">Estimated remaining hours = planning limit − recorded hours − scheduled hours</p></div>
+        <p>This formula is only as accurate as its inputs. A missing scheduled block makes the estimate too high. A canceled block that remains in the tracker makes it too low. A changed rule or account-specific restriction can make the arithmetic different from the official app.</p>
+
+        <h3>Why a 12-hour forecast can be useful</h3>
+        <p>A short forecast asks a practical question: based on the blocks already recorded and scheduled, what might the hour picture look like during the next part of the day? It helps a driver see that an older block may soon leave a rolling window or that a future reservation already uses part of the planning capacity.</p>
+        <p>A forecast does not predict that Amazon will show an offer. Demand, station needs, eligibility, account state, and other factors remain outside the tracker. It predicts only the result of the stored hour calculation as time moves forward.</p>
+
+        <h2 id="examples">Example 1: calculate a rolling total</h2>
+        <p>Imagine the following completed block durations. These values are examples, not statements about a universal Amazon limit.</p>
+        <div class="table-wrap"><table class="article-table"><thead><tr><th>Day</th><th>Block hours</th></tr></thead><tbody><tr><td>Thursday</td><td>4</td></tr><tr><td>Friday</td><td>3</td></tr><tr><td>Saturday</td><td>5</td></tr><tr><td>Sunday</td><td>0</td></tr><tr><td>Monday</td><td>4</td></tr><tr><td>Tuesday</td><td>3</td></tr><tr><td>Wednesday</td><td>4</td></tr><tr><td><strong>Rolling total</strong></td><td><strong>23</strong></td></tr></tbody></table></div>
+        <p>On Wednesday, the example rolling total is 23 hours. When Thursday begins, the oldest Thursday may leave the seven-day window. If no new Thursday block is added, the total becomes 19 hours because the four oldest hours have aged out.</p>
+        <p>This “hours falling off” effect is the central idea behind a rolling window. Nothing was deleted from the historical record. The calculation simply stopped including a date outside the current range.</p>
+
+        <h2>Example 2: include future scheduled blocks</h2>
+        <p>Suppose the driver has 19 recorded hours in the relevant window and has already accepted a four-hour block for tomorrow. For planning, the committed total is 23 hours.</p>
+        <div class="card"><p class="formula">19 recorded hours + 4 scheduled hours = 23 committed hours</p></div>
+        <p>If the driver looked only at completed blocks, the schedule would appear to have four fewer committed hours. Including scheduled blocks prevents that blind spot.</p>
+        <p>Now suppose a three-hour block from the oldest date will leave the window before tomorrow’s scheduled block begins. A time-aware forecast may show the total falling by three and then increasing by four. A simple static total cannot express that sequence.</p>
+
+        <h2>Example 3: avoid double counting</h2>
+        <p>A scheduled block becomes a completed block after it is worked. It should move between states, not exist twice. If the same four-hour block remains in both the completed list and the scheduled list, the tracker will count eight hours.</p>
+        <p>Use a stable routine:</p>
+        <ol class="list"><li>Record a newly accepted block as scheduled.</li><li>Confirm its start date, time, and duration.</li><li>After the block, mark or record it as completed according to the tracker’s workflow.</li><li>Remove or update canceled and forfeited blocks.</li><li>Review the next several days before relying on a remaining-hours estimate.</li></ol>
+
+        <h2>Why available blocks and available hours are not the same</h2>
+        <p>An hour calculation can indicate that your personal plan has room for more work. That does not mean a matching block is available. Amazon’s official offer screen reflects the blocks currently shown to your account. A planning tool cannot create inventory, reserve an offer, or override Amazon’s decisions.</p>
+        <p>Keep the language precise:</p>
+        <ul class="list"><li><strong>Estimated hour capacity</strong> is a mathematical planning result.</li><li><strong>Available offer</strong> is a block actually presented through Amazon Flex.</li><li><strong>Accepted block</strong> is an offer you have reserved and should include in your schedule.</li></ul>
+        <p>If GIG Income estimates remaining hours but Amazon shows no offers, there is not necessarily an error. The two screens answer different questions.</p>
+
+        <h2>Common Amazon Flex hour-tracking mistakes</h2>
+        <h3>Assuming Monday starts every calculation</h3><p>Monday-to-Sunday is convenient for earnings reports, but a rolling seven-day view does not wait for Monday. It changes as the date and time move.</p>
+        <h3>Ignoring scheduled blocks</h3><p>Completed hours alone can understate commitments. Enter future blocks as soon as they are accepted, especially when planning several days ahead.</p>
+        <h3>Using actual route time as block duration</h3><p>Actual time is valuable for profit analysis, but replacing the scheduled duration can change an hour-capacity calculation. Store both values for their proper purposes.</p>
+        <h3>Treating an estimate as Amazon approval</h3><p>A third-party tracker cannot guarantee eligibility or block availability. Confirm every decision inside Amazon Flex.</p>
+        <h3>Forgetting canceled blocks</h3><p>When a reservation changes, the personal schedule must change too. Old data produces a misleading forecast.</p>
+        <h3>Copying another driver’s limit</h3><p>Another market or account may behave differently. Use the settings and information applicable to your own current situation.</p>
+
+        <h2 id="tracker">How the Amazon Flex feature in GIG Income helps</h2>
+        <p><a href="/gig-income/"><strong>GIG Income</strong></a> brings Amazon Flex planning into the same iPhone app used for gig income, expenses, net profit, goals, platform comparison, and monthly and yearly statistics. Its Amazon Flex feature can show recorded and scheduled blocks, rolling 7-day hours, current estimated capacity, and an estimate for the next 12 hours.</p>
+        <p>The advantage is context. You can organize hours without separating them from the financial result of the work. A block may fit the hour plan but still produce weak real profit after driving costs. The pillar guide <a href="/knowledge/gig-economy/real-gig-profit-after-expenses/"><strong>How to Calculate Real Gig Profit After Expenses</strong></a> explains how to evaluate that side of the decision.</p>
+        <p>GIG Income does not connect to Amazon to make official decisions, and it does not promise that a block will appear. The accuracy of the estimate depends on the information entered and the planning settings used. See the dedicated <a href="/gig-income/amazon-flex-hours/"><strong>Amazon Flex Hours Tracker feature page</strong></a> for the current app presentation.</p>
+        <div class="card"><div class="tag">Related VM LAB App</div><h2>Plan hours beside income and expenses</h2><p>Use GIG Income when you want one place for scheduled Amazon Flex blocks, rolling-hour estimates, income, expenses, and net profit across multiple gig apps.</p><a class="btn btn-primary" href="https://apps.apple.com/us/app/gig-income/id6770739845" target="_blank" rel="noopener noreferrer">Download GIG Income on the App Store</a></div>
+
+        <h2>Hours alone cannot tell you whether a block was profitable</h2>
+        <p>An hour tracker helps with capacity and scheduling, but it should not become the only measure of a good workweek. Two blocks with the same scheduled duration can produce different financial results. One may involve a nearby station, a compact route, and few direct costs. Another may require a longer drive to the station, more delivery miles, tolls, parking, or an unpaid return trip.</p>
+        <p>After completing a block, connect the schedule record with four additional numbers: gross earnings, direct expenses, actual time, and work miles. Then calculate estimated profit and profit per actual hour. This separates the question “Can this block fit my schedule?” from the question “Did this block support my income goal?”</p>
+        <div class="table-wrap"><table class="article-table"><thead><tr><th>Record</th><th>Question it answers</th></tr></thead><tbody><tr><td>Scheduled block duration</td><td>How many planned Flex hours does the block add?</td></tr><tr><td>Actual work time</td><td>How much of the day did the work require?</td></tr><tr><td>Gross earnings</td><td>What did the block pay before costs?</td></tr><tr><td>Direct expenses</td><td>What did this work cost to complete?</td></tr><tr><td>Estimated profit</td><td>What remained after recorded direct costs?</td></tr></tbody></table></div>
+        <p>Over several weeks, these records help reveal patterns that an hour total cannot show. A driver may discover that certain stations, start times, or route types regularly require more actual time or expense. The goal is not to judge a block from one unusual day, but to build enough consistent history to make better scheduling decisions.</p>
+
+        <h2>A practical daily review</h2>
+        <ol class="list"><li>Open Amazon Flex and confirm accepted blocks.</li><li>Update scheduled blocks in your personal tracker.</li><li>Review blocks completed during the last seven days.</li><li>Check which older hours will leave the window next.</li><li>Compare the hour estimate with the official Amazon Flex screen.</li><li>After work, record income, direct expenses, and actual time.</li></ol>
+        <p>This takes only a few minutes when records are current. Waiting several days creates uncertainty about cancellations, changed start times, and which blocks were already converted from scheduled to completed.</p>
+        <p>Drivers who combine Flex with other platforms should also keep a unified earnings record. The guide <a href="/knowledge/gig-economy/multiple-gig-apps/"><strong>How to Track Multiple Gig Apps in One Place</strong></a> shows why separate payout screens cannot explain the full week.</p>
+
+        <h2 id="faq">Frequently asked questions</h2>
+        <h3>What counts as Amazon Flex hours?</h3><p>For personal planning, drivers commonly track the scheduled duration of accepted delivery blocks. Keep actual work time separately for profitability analysis. Amazon’s app and current program terms remain authoritative.</p>
+        <h3>What does rolling 7-day hours mean?</h3><p>It is a moving total based on the current day and preceding six days. As time advances, the oldest hours leave the window and new completed or scheduled hours enter.</p>
+        <h3>When do Amazon Flex hours reset?</h3><p>A rolling total does not have one weekly reset like a calendar report. Hours age out as the window moves. The precise official treatment can depend on Amazon’s current implementation, so verify your account in Amazon Flex.</p>
+        <h3>Why do estimated available hours change?</h3><p>Older hours may leave the window, new or scheduled blocks may enter it, or your underlying records may change. Official availability can also change for reasons a personal tracker cannot observe.</p>
+        <h3>Can an hour tracker guarantee more blocks?</h3><p>No. It can organize your schedule and calculate estimates. Only Amazon controls offers, eligibility, and whether a block is displayed or accepted.</p>
+        <h3>Is GIG Income affiliated with Amazon?</h3><p>No. GIG Income is an independent VM LAB app. Amazon Flex and related marks belong to Amazon.</p>
+
+        <h2>Bottom line</h2>
+        <p>Amazon Flex hour planning becomes easier when you separate completed blocks, scheduled blocks, actual work time, and official offer availability. A rolling seven-day total moves every day; it does not behave like a fixed Monday-to-Sunday report.</p>
+        <p>Use a tracker to understand the schedule you entered, not to replace Amazon Flex. Keep future blocks current, avoid double counting, and treat calculated remaining hours as an estimate. Then connect the hour plan with income and expenses to decide whether the work supports your goals.</p>
+        <p>Continue through the <a href="/knowledge/"><strong>VM LAB Knowledge Center</strong></a>, browse all <a href="/apps/"><strong>VM LAB apps</strong></a>, or see the studio’s broader work on the <a href="/projects/"><strong>Projects page</strong></a>.</p>
+      </div></section>
+    </article>
+    <section class="section article-related"><div class="container narrow"><div class="section-head"><h2>Related Guides</h2></div><div class="grid"><a class="card blog-card" href="/knowledge/gig-economy/real-gig-profit-after-expenses/"><div class="tag">Income & Expenses</div><h3>How to calculate real gig profit after expenses</h3><p>Measure what your gig work produces after direct costs.</p><span class="mini-btn">Read Guide →</span></a><a class="card blog-card" href="/knowledge/gig-economy/multiple-gig-apps/"><div class="tag">Multi-App Work</div><h3>How to track multiple gig apps in one place</h3><p>Combine the work picture when income comes from several platforms.</p><span class="mini-btn">Read Guide →</span></a><a class="card blog-card" href="/knowledge/gig-economy/gross-income-vs-net-income-gig-workers/"><div class="tag">Income Basics</div><h3>Gross income vs net income for gig workers</h3><p>Understand the difference between payouts and estimated profit.</p><span class="mini-btn">Read Guide →</span></a></div></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><div>© 2026 VM LAB</div><div><a href="/privacy/">Privacy</a> &nbsp;|&nbsp; <a href="/support/">Support</a> &nbsp;|&nbsp; <a href="/contact/">Contact</a></div></div></footer><script src="/assets/js/main.js"></script>
+</body>
+</html>
