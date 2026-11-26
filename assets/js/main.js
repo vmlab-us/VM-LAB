@@ -32,7 +32,8 @@ if(!window.__vmLabContactTrackingInitialized){
   if(link.hostname==='apps.apple.com' && /\/id6770739845\/?$/.test(link.pathname)){
    trackEvent('gig_income_app_store_click',{
     link_url:link.href,
-    page_path:window.location.pathname
+    page_path:window.location.pathname,
+    link_placement:link.dataset.storePlacement || 'default'
    });
   }
 
