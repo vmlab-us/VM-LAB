@@ -28,6 +28,14 @@ if(!window.__vmLabContactTrackingInitialized){
   if(!link)return;
 
   const href=link.getAttribute('href')||'';
+
+  if(link.hostname==='apps.apple.com' && /\/id6770739845\/?$/.test(link.pathname)){
+   trackEvent('gig_income_app_store_click',{
+    link_url:link.href,
+    page_path:window.location.pathname
+   });
+  }
+
   let contactMethod='';
   if(href.startsWith('tel:'))contactMethod='phone';
   else if(href.startsWith('mailto:'))contactMethod='email';
